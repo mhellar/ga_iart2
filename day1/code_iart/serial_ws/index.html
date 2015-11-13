@@ -7,9 +7,9 @@
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script>
     var socket = io.connect('//localhost:3000');
-    socket.on('data', function(data) {
+    socket.on('nameofchannel', function(data) {
         console.log(data);
-        $('#incoming').text(data.val);
+        $('#incoming').text(data);
     });
     socket.on('error', function() {
         console.error(arguments)
