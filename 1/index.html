@@ -109,6 +109,9 @@
                         <h3>Setting up WIFI</h3>
                   
                     <pre><code class="hljs" data-trim contenteditable>
+//scan the network
+sudo iwlist wlan0 scan
+
 sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
 
 //add this at bottom
